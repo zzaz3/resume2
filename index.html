@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zach Comstock</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Chart JS -->
+    <script src="vendor/js/chart.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="vendor/js/scrollreveal.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Zach Comstock
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects">My Projects</a>
+                    <ul>
+                        <li>
+                            <a href="#">Intel Z80 Compiler</a>
+                        </li>
+                        <li>
+                            <a href="#">Space Invaders Emulator</a>
+                        </li>
+                        <li>
+                            <a href="#">Neural Net Library</a>
+                        </li>
+                        <li>
+                            <a href="#">Connect-R AI</a>
+                        </li>
+                        <li>
+                            <a href="#">Grid World</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#employment">Employment</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="https://puu.sh/zfXfU.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="https://puu.sh/zfXfT.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="https://puu.sh/zfXfD.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- About Section -->
+            <section id="about" class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 reveal">
+                            <h2>Zachary R. Comstock</h2>
+                            <img class="img-responsive" src="/web/20170610105318im_/http://www.zachcomstock.com:80/Images/profile.png" alt="" />
+                        </div>
+                        <div class="col-md-7 reveal">
+                            <h1>About Me</h1>
+                            <p class="lead">I am currently a Software Engineering student at Kennesaw State University(KSU). I enjoy working
+                                with and creating artificial intelligence programs, web-based applications, and video games.</p>
+                            <p class="lead">I am the founder and current president of the KSU Homebrew Computing Club. I work for KSU as
+                                a teaching assistant in data structures. My estimated graduation date is Fall 2017.</p>
+                            <canvas id="myChart" width="200" height="100"></canvas>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <script>
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+                    type: 'horizontalBar',
+                    data: {
+                        labels: ["C++", "C#", "HTML-5/CSS", "ASP.NET", "Javascript", "Python", "AngularJS", "jQuery", "NodeJS", "PHP", "JAVA"],
+                        datasets: [{
+                            data: [70, 68, 66, 65, 64, 64, 64, 60, 59, 58, 57],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(255, 159, 64, 0.2)',
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(255, 159, 64, 1)',
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: "Key Technical Skills"
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltips: {
+                            enabled: false
+                        },
+                        scales: {
+                            xAxes: [{
+                                display: false,
+                            }],
+                            yAxes: [{
+                                barThickness: 10,
+
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+            <!-- Projects Section -->
+            <section id="projects">
+
+                <div class="container">
+
+                    <!-- Page Heading -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="text-center">Projects</h1>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="lead">
+                        <!-- Project One -->
+                    <div class="row">
+                            <div class="col-md-7 reveal">
+                                <a href="#">
+                                    <img class="img-responsive" src="/web/20170610105318im_/http://www.zachcomstock.com:80/Images/connectfour.png" width="500"
+                                        height="300" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-md-5 reveal">
+                                <h3>Connect-R AI</h3>
+                                <h4>Using Minimax Algorithm with Alpha-Beta Pruning</h4>
+                                <p>The Connect-R project was originally developed in C++ from scratch; it's essentially a dynamic
+                                    version of Connect Four, meaning you can have any combination of rows, columns, and win conditions.
+                                    I applied the minimax algorithm to dynamically construct my AI's decision tree. I also added
+                                    alpha-beta pruning to prevent the function from creating unnessasary branches and incease
+                                    the AI's response time. The AI's heuristic was designed such a way that it will attempt to
+                                    set up multiple paths to winning. I am currently in the process of recreating this project
+                                    using a javascript based game engine called phaser.io.</p>
+                                <!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Project Two -->
+                        <div class="row">
+                            <div class="col-md-7 reveal">
+                                <a href="#">
+                                    <img class="img-responsive" src="/web/20170610105318im_/http://www.zachcomstock.com:80/Images/neuralnet.png" width="500"
+                                        height="300" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-md-5 reveal">
+                                <h3>Handwriting Recognition</h3>
+                                <h4>Using an Artificial Neural Network(ANN)</h4>
+                                <p>There are plenty of open source libraries available that greatly simplify the process of creating
+                                    ANNs. However, for this project I decided to design and create my own ANN object from scratch
+                                    in C++. I created a feed-forward ANN with back propagation. In implementation, I tested my
+                                    ANN's ability to recognize handwritten numerical digits between 0 and 9. The overall accuracy
+                                    varied based on the amount of layers/neurons I added in my ANN and the amount of training
+                                    data I presented it with.</p>
+                                <!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Project Three -->
+                        <div class="row">
+                            <div class="col-md-7 reveal">
+                                <a href="#">
+                                    <img class="img-responsive" src="/web/20170610105318im_/http://www.zachcomstock.com:80/Images/gridworld.png" width="500"
+                                        height="300" alt="" />
+                                </a>
+                            </div>
+                            <div class="col-md-5 reveal">
+                                <h3>Grid World</h3>
+                                <h4>Reinforcement learing using SARSA(lambda) Algorithm</h4>
+                                <p>Similarly to the ANN project, there are plenty of libraries that handle the hard work of reinforcement
+                                    learning for you. However, in order to fully appricate and understand how reinforcement learning
+                                    works, I opted to implement the logic behind the sarsa(lambda) algorithm from scratch in
+                                    a javascript application. With the object set to explore 20% of the time and exploit 80%
+                                    of the time and the decay rate set to .5, the object learned to navigate the grid in about
+                                    6 days. The process would have been much quicker if I had not have used a GUI. Moving forward,
+                                    I plan to reimplement this project in a C++ project and compare the results.</p>
+                                <!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Project Four -->
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <h1 class="text-center">Education</h1>
+                            <div class="lead">
+                                    <h3 style="float:left;">Degree Work</h3>
+                                    <br/>
+                                    <br/>
+                                    <p>
+                                        <strong style="float:left;">Bachelor's of Science in Software Engineering</strong>
+                                        <span style="float:right;">Fall 2017</span>
+                                        <br/>
+                                        <span style="float:left;font-style: italic;">Kennesaw State University</span>
+                                        <span style="float:right;font-style: italic;">Kennesaw, GA</span>
+                                    </p>
+                                    <br/>
+                                    <h3 style="float:left;">Supplementary Online Courses</h3>
+                                    <br/>
+                                    <br/>
+                                    <p>
+                                        <strong style="float:left;">Neural Networks for Machine Learning</strong>
+                                        <span style="float:right;">Fall 2016</span>
+                                        <br/>
+                                        <span style="float:left;font-style: italic;">Coursera</span>
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <strong style="float:left;">React and Redux in ES6</strong>
+                                        <span style="float:right;">Spring 2018</span>
+                                        <br/>
+                                        <span style="float:left;font-style: italic;">Pluralsight</span>
+                                        <br/>
+                                    </p>
+                                    <p>
+                                        <strong style="float:left;">High-performance Computing in C++</strong>
+                                        <span style="float:right;">Summer 2018</span>
+                                        <br/>
+                                        <span style="float:left;font-style: italic;">Pluralsight</span>
+                                        <br/>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="employment" >
+                <div class="container">
+
+                    <!--Employment-->
+                    <div class="row">
+                        <div class="col-lg-12 mx-auto">
+                            <h1 class="text-center">Employment</h1>
+                            <div class="lead">
+                                    <p>
+                                            <strong style="float:left;">Data Structures Teaching Assistant</strong>
+                                            <span style="float:right;">August 2016 &mdash; current</span>
+                                            <br/>
+                                            <span style="float:left;font-style: italic;">Kennesaw State University</span>
+                                            <span style="float:right;font-style: italic;">Marietta, GA</span>
+                                        </p>
+                                        <br/>
+                                        <ul>
+                                            <li>
+                                                Teach students the concepts and implementation of various data structures in C++ (Linked Lists, Binary Trees, Hash Tables,
+                                                ect..)
+                                            </li>
+                                            <li>
+                                                Guide students through the coding process during scheduled tutoring hours
+                                            </li>
+                                            <li>
+                                                Provide the professor with assistance and feedback during class time
+                                            </li>
+                                        </ul>
+                                        <br/>
+                                        <p>
+                                            <strong style="float:left;">Software Engineer Intern</strong>
+                                            <span style="float:right;">May 2016 &mdash; August 2016</span>
+                                            <br/>
+                                            <span style="float:left;font-style: italic;">Scientific Games</span>
+                                            <span style="float:right;font-style: italic;">Alpharetta, GA</span>
+                                        </p>
+                                        <br/>
+                                        <ul>
+                                            <li>
+                                                Discussed and identified software, business, and development requirements for upcoming projects
+                                            </li>
+                                            <li>
+                                                Used Microsofts MVC framework (C#, AngularJS, HTML5, CSS) to develop fully functional web-based applications
+                                            </li>
+                                            <li>
+                                                Performed white box testing on embedded C++ program files
+                                            </li>
+                                        </ul>
+                                        <br/>
+                                        <p>
+                                            <strong style="float:left;">Student Assistant</strong>
+                                            <span style="float:right;">August 2015 &mdash; August 2016</span>
+                                            <br/>
+                                            <span style="float:left;font-style: italic;">Kennesaw State University</span>
+                                            <span style="float:right;font-style: italic;">Kennesaw, GA</span>
+                                        </p>
+                                        <br/>
+                                        <ul>
+                                            <li>
+                                                Performed various clerical duties such as filing, copying, running errands, answering the telephone and assisting students
+                                            </li>
+                                            <li>
+                                                Provided accurate information to students and visitors concerning University facilities, programs, policies, procedures and
+                                                services
+                                            </li>
+                                            <li>
+                                                Presented a positive image of the University through conduct and appearance
+                                            </li>
+                                        </ul>
+                                        <br/>
+                                        <p>
+                                            <strong style="float:left;">Software Tester Intern</strong>
+                                            <span style="float:right;">November 2014 &mdash; June 2015</span>
+                                            <br/>
+                                            <span style="float:left;font-style: italic;">E-Ring Inc.</span>
+                                            <span style="float:right;font-style: italic;">Alpharetta, GA</span>
+                                        </p>
+                                        <br/>
+                                        <ul>
+                                            <li>
+                                                Documented and reported bugs, errors, interoperability flaws and other issues within proprietary software applications developed
+                                                for E-Rings global user base
+                                            </li>
+                                            <li>
+                                                Used methodical, detail-oriented and thorough approach to all assignments while adhering to compressed timelines
+                                            </li>
+                                            <li>
+                                                Completed all assignments on or ahead of schedule
+                                            </li>
+                                        </ul>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 reveal">
+                            <h1 class="text-center">Contact</h1>
+                            <hr/>
+                            <div class="lead">
+                                    <p class="text-center">
+                                            <a href="https://web.archive.org/web/20170610105318/mailto:comstock.zach@gmail.com" target="_blank" class="blue">comstock.zach@gmail.com</a>
+                                        </p>
+                                        <hr/>
+                                        <p class="text-center">
+                                            <a href="https://web.archive.org/web/20170610105318/https://www.linkedin.com/in/zachary-comstock-57931112b" target="_blank"
+                                                class="blue">LinkedIn</a>
+                                        </p>
+            
+                                        <!--<p class="text-center"><a href="https://github.com/zzaz3" target="_blank" class="blue">GitHub</a></p>-->
+                                        <hr/>
+                                        <p class="text-center">
+                                            <a href="/web/20170610105318/http://www.zachcomstock.com:80/Content/resume.pdf" target="_blank" class="blue">Resume</a>
+                                        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <section id="footer" class="footer-section">
+                <footer>
+                    <div class="row">
+                        <div class="col-lg-12 reveal">
+                            <div class="lead">
+                                    <p class="text-center">Thanks for visiting!</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </footer>
+            </section>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Reveal -->
+    <script>sr.reveal('.reveal', { viewFactor: 0.5 }, { reset: false });</script>
+
+</body>
+
+</html>
