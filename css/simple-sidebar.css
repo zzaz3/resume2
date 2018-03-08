@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+.center-block {
+  margin-left:auto;
+  margin-right:auto;
+  display:table;
+}
+
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -25,17 +31,13 @@ body {
   background-size: cover;
 }
 
-#wrapper.toggled {
-  padding-left: 250px;
-}
-
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 250px;
+  left: 450px;
   width: 0;
   height: 100%;
-  margin-left: -250px;
+  margin-left: -450px;
   overflow-y: auto;
   background: #000;
   -webkit-transition: all 0.5s ease;
@@ -43,9 +45,53 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+#turner-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  margin-left: -450px;
+  overflow-y: auto;
+  background: #f0f0f0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
-#wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+#homebrew-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  margin-left: -450px;
+  overflow-y: auto;
+  background: #f0f0f0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#blizz-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0px;
+  width: 0;
+  height: 100%;
+  margin-left: -450px;
+  overflow-y: auto;
+  background: #f0f0f0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#slideout-wrapper {
+  width: 850px;
 }
 
 #page-content-wrapper {
@@ -53,10 +99,6 @@ body {
   position: absolute;
 }
 
-#wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px;
-}
 
 
 /* Sidebar Styles */
@@ -64,7 +106,16 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slideout {
+  position: absolute;
+  top: 0;
+  width: 450px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -108,10 +159,28 @@ body {
 
 @media(min-width:768px) {
   #wrapper {
-    padding-left: 250px;
+    padding-left: 450px;
+  }
+  #turner-wrapper {
+    width: 0;
+  }
+  #homebrew-wrapper {
+    width: 0;
+  }
+  #blizz-wrapper {
+    width: 0;
+  }
+  #turner-wrapper.toggled {
+    width: 80%;
+  }
+  #homebrew-wrapper.toggled {
+    width: 80%;
+  }
+  #blizz-wrapper.toggled {
+    width: 80%;
   }
   #sidebar-wrapper {
-    width: 250px;
+    width: 450px;
   }
   #page-content-wrapper {
     position: relative;
