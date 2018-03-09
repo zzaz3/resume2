@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
- */
 
 body {
   overflow-x: hidden;
@@ -34,10 +29,10 @@ body {
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 450px;
+  left: 20%;
   width: 0;
   height: 100%;
-  margin-left: -450px;
+  margin-left: -20%;
   overflow-y: auto;
   background: #000;
   -webkit-transition: all 0.5s ease;
@@ -53,7 +48,7 @@ body {
   height: 100%;
   margin-left: -450px;
   overflow-y: auto;
-  background: #f0f0f0;
+  background: #f9f9f9;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -68,7 +63,7 @@ body {
   height: 100%;
   margin-left: -450px;
   overflow-y: auto;
-  background: #f0f0f0;
+  background: #f9f9f9;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -83,7 +78,7 @@ body {
   height: 100%;
   margin-left: -450px;
   overflow-y: auto;
-  background: #f0f0f0;
+  background: #f9f9f9;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -106,7 +101,7 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 450px;
+  width: 400px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -123,7 +118,7 @@ body {
 
 .sidebar-nav li {
   text-indent: 20px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .sidebar-nav li a {
@@ -159,7 +154,7 @@ body {
 
 @media(min-width:768px) {
   #wrapper {
-    padding-left: 450px;
+    padding-left: 20%;
   }
   #turner-wrapper {
     width: 0;
@@ -180,7 +175,7 @@ body {
     width: 80%;
   }
   #sidebar-wrapper {
-    width: 450px;
+    width: 20%;
   }
   #page-content-wrapper {
     position: relative;
