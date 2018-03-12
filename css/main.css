@@ -8,10 +8,7 @@
     color: #444444;
     font-family: 'Nunito', sans-serif;
     line-height: 1.6; }
-  
-  body {
-    margin: 1rem 0; }
-  
+
   a {
     color: #4D648D;
     text-decoration: none;
@@ -19,7 +16,7 @@
     transition: all .3s ease; }
   
   .container {
-    max-width: 1450px;
+    max-width: 2050px;
     margin: 0 auto;
     padding: 0 15px; }
   
