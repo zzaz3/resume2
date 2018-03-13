@@ -18,6 +18,9 @@
 
     <!-- Chart JS -->
     <script src="vendor/js/chart.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Scroll Reveal -->
     <script src="vendor/js/scrollreveal.min.js"></script>
@@ -30,318 +33,394 @@
 
 <body>
 
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Zach Comstock
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">My Projects</a>
-                    <ul>
-                        <li>
-                            <a href="#compiler">Intel Z80 Compiler</a>
-                        </li>
-                        <li>
-                            <a href="#emulator">Space Invaders Emulator</a>
-                        </li>
-                        <li>
-                            <a href="#neuralnet">Neural Net Library</a>
-                        </li>
-                        <li>
-                            <a href="#gridworld">Grid World</a>
-                        </li>
-                        <li>
-                            <a href="#connectr">Connect-R AI</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-                <li>
-                    <a href="#employment">Employment</a>
-                    <ul>
-                        <li>
-                            <a href="#turner">Turner Studios</a>
-                        </li>
-                        <li>
-                            <a href="#blizzard">Blizzard Entertainment</a>
-                        </li>
-                        <li>
-                            <a href="#kennesaw">Kennesaw State University</a>
-                        </li>
-                        <li>
-                            <a href="#scientific">Scientific Games</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Blizzard-->
-        <div id="blizz-wrapper">
-            <a href="#blizz-toggle" class="btn btn-secondary" id="blizz-close"> X </a>
-            <section class="bg-light">
-                <br/>
-                <div class="container-fluid bg-light">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="center-block">
-                                <h1 class="text-center">My Experience Working at </h1>
-                                <img class="center-block" src="vendor/images/blizzlogo.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/sc2.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">What I worked on</h1>
-                                <p class="lead text-center">I was fortunate enough to be selected to work on one of my favorite games of all time, Starcraft
-                                    II. I created unit tests, reported/fixed bugs, and added example use cases to
-                                    <a href="https://github.com/Blizzard/s2client-api">
-                                        Blizzard's and Google Deepmind's AI API</a> project, which is publicly available
-                                    on GitHub.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">Where I worked</h1>
-                                <p class="lead text-center">I worked at Blizzard's main campus out in sunny Irvine, CA. Blizzard is famously known for
-                                    having cool offices an amazing work culture. The endless amount of food and gaming events
-                                    was enough to keep me happy, but what really makes Blizzard a fun company to work for
-                                    is its people. Working alongside fellow nerds made programming twice as fun!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/blizzardcampus.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/blizzteam.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">Who I Worked With</h1>
-                                <p class="lead text-center">Pictured on the left is just a small subset of the incredibly talented Starcraft II team
-                                    (thats me in the middle). Their passion for games and technology made my time at Blizzard
-                                    Entertainment a blast!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                </div>
-            </section>
-        </div>
-        <!-- Homebrew-->
-        <div id="homebrew-wrapper">
-            <a href="#homebrew-toggle" class="btn btn-secondary" id="homebrew-close"> X </a>
-            <section class="bg-light">
-                <br/>
-                <div class="container-fluid bg-light">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="center-block">
-                                <h1 class="text-center">All About the Homebrew Computer Club</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/sc2.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">What is it?</h1>
-                                <p class="lead text-center">I was fortunate enough to be selected to work on one of my favorite games of all time, Starcraft
-                                    II. I created unit tests, reported/fixed bugs, and added example use cases to
-                                    <a href="https://github.com/Blizzard/s2client-api">
-                                        Blizzard's and Google Deepmind's AI API</a> project, which is publicly available
-                                    on GitHub.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">What do we do?</h1>
-                                <p class="lead text-center">I worked at Blizzard's main campus out in sunny Irvine, CA. Blizzard is famously known for
-                                    having cool offices an amazing work culture. The endless amount of food and gaming events
-                                    was enough to keep me happy, but what really makes Blizzard a fun company to work for
-                                    is its people. Working alongside fellow nerds made programming twice as fun!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/blizzardcampus.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/blizzteam.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">What is my role?</h1>
-                                <p class="lead text-center">Pictured on the left is just a small subset of the incredibly talented Starcraft II team
-                                    (thats me in the middle). Their passion for games and technology made my time at Blizzard
-                                    Entertainment a blast!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                </div>
-            </section>
-        </div>
-        <!-- Turner-->
-        <div id="turner-wrapper">
-            <a href="#turner-toggle" class="btn btn-secondary" id="turner-close"> X </a>
-            <section class="bg-light">
-                <br/>
-                <div class="container-fluid bg-light">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="center-block">
-                                <h1 class="text-center">My Experience Working at </h1>
-                                <img class="center-block" src="vendor/images/turnerlogo.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/turneroffice.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">Where I Worked</h1>
-                                <p class="lead text-center">I was fortunate enough to be selected to work on one of my favorite games of all time, Starcraft
-                                    II. I created unit tests, reported/fixed bugs, and added example use cases to
-                                    <a href="https://github.com/Blizzard/s2client-api">
-                                        Blizzard's and Google Deepmind's AI API</a> project, which is publicly available
-                                    on GitHub.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="center-block">
-                                <h1 class="text-center">What I Worked on</h1>
-                                <p class="lead text-center">I worked at Blizzard's main campus out in sunny Irvine, CA. Blizzard is famously known for
-                                    having cool offices an amazing work culture. The endless amount of food and gaming events
-                                    was enough to keep me happy, but what really makes Blizzard a fun company to work for
-                                    is its people. Working alongside fellow nerds made programming twice as fun!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="center-block">
-                                <img class="center-block" src="vendor/images/turnerreact.jpg" height="100%" width="100%" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                </div>
-            </section>
+<div id="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Zach Comstock</h3>
         </div>
 
-        <!-- Turner-->
-        <div id="turner-wrapper">
-            <a href="#turner-toggle" class="btn btn-secondary" id="turner-close"> X </a>
-        </div>
-        <!-- Homebrew -->
-        <div id="homebrew-wrapper">
-            <a href="#homebrew-toggle" class="btn btn-secondary" id="homebrew-close"> X </a>
-        </div>
+        <ul class="list-unstyled components">
+            <p>C / C++ Developer</p>
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li >
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Projects</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#compiler">Intel Z80 Compiler</a>
+                    </li>
+                    <li>
+                        <a href="#emulator">Space Invaders Emulator</a>
+                    </li>
+                    <li>
+                        <a href="#neuralnet">Neural Net Library</a>
+                    </li>
+                    <li>
+                        <a href="#gridworld">Grid World</a>
+                    </li>
+                    <li>
+                        <a href="#connectr">Connect-R AI</a>
+                    </li>
+                </ul>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Employement</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#turner">Turner Studios</a>
+                    </li>
+                    <li>
+                        <a href="#blizzard">Blizzard Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="#kennesaw">Kennesaw State University</a>
+                    </li>
+                    <li>
+                        <a href="#scientific">Scientific Games</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
 
-        <!-- /#sidebar-wrapper -->
-        <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <a href="#blizz-toggle" id="blizz-toggle">
-                            <img class="d-block img-fluid" src="https://puu.sh/zfXfU.png" width="2000" alt="First slide">
-                            <a/>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#hombrew-toggle" id="homebrew-toggle">
-                            <img class="d-block img-fluid" src="https://puu.sh/zfXfT.png" width="2000" alt="Second slide">
-                            <a/>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#turner-toggle" id="turner-toggle">
-                            <img class="d-block img-fluid" src="https://puu.sh/zfXfD.png" width="2000" alt="Third slide">
-                            <a/>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+        <ul class="list-unstyled CTAs">
+            <li><a href="https://github.com/zzaz3" class="download">Github</a></li>
+            <li><a href="vendor/resume.pdf" class="article">Resume</a></li>
+        </ul>
+    </nav>
+    <!-- Sidebar
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Zach Comstock
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">My Projects</a>
+                <ul>
+                    <li>
+                        <a href="#compiler">Intel Z80 Compiler</a>
+                    </li>
+                    <li>
+                        <a href="#emulator">Space Invaders Emulator</a>
+                    </li>
+                    <li>
+                        <a href="#neuralnet">Neural Net Library</a>
+                    </li>
+                    <li>
+                        <a href="#gridworld">Grid World</a>
+                    </li>
+                    <li>
+                        <a href="#connectr">Connect-R AI</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#employment">Employment</a>
+                <ul>
+                    <li>
+                        <a href="#turner">Turner Studios</a>
+                    </li>
+                    <li>
+                        <a href="#blizzard">Blizzard Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="#kennesaw">Kennesaw State University</a>
+                    </li>
+                    <li>
+                        <a href="#scientific">Scientific Games</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Blizzard-->
+    <div id="blizz-wrapper">
+        <a href="#blizz-toggle" class="btn btn-secondary" id="blizz-close"> X </a>
+        <section class="bg-light">
+            <br/>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-block">
+                            <h1 class="text-center">My Experience Working at </h1>
+                            <img class="center-block" src="vendor/images/blizzlogo.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/sc2.jpg" height="80%" width="80%" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">What I worked on</h1>
+                            <p class="lead text-center">I was fortunate enough to be selected to work on one of my favorite games of all time, Starcraft
+                                II. I created unit tests, reported/fixed bugs, and added example use cases to
+                                <a href="https://github.com/Blizzard/s2client-api">
+                                    Blizzard's and Google Deepmind's AI API</a> project, which is publicly available
+                                on GitHub.
+                            </p>
+                            <p class="lead text-center">I also worked on a super cool feature that will be in the game in the near future.
+                                As much as I would love to tell you guys about it, I'm afraid that the feature has yet to be publicly announced.
+                                Check back again soon!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">Where I worked</h1>
+                            <p class="lead text-center">I worked at Blizzard's main campus out in sunny Irvine, CA.
+                                Blizzard is famously known for having cool offices an amazing work culture.
+                                The endless amount of food and gaming events was enough to keep me happy, but
+                                what really makes Blizzard a fun company to work for is its people.  Working alongside
+                                fellow nerds made programming twice as fun!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/blizzardcampus.jpg" height="80%" width="80%" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/blizzteam.jpg" height="70%" width="70%" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">Who I Worked With</h1>
+                            <p class="lead text-center">Pictured on the left is just a small subset of the
+                                incredibly talented Starcraft II team (thats me in the middle). Their passion
+                                for games and technology made my time at Blizzard Entertainment a blast!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
             </div>
-        </header>
+        </section>
+    </div>
+    <!-- Homebrew-->
+    <div id="homebrew-wrapper">
+        <a href="#homebrew-toggle" class="btn btn-secondary" id="homebrew-close"> X </a>
+        <section class="bg-light">
+            <br/>
+            <div class="container-fluid bg-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-block">
+                            <h1 class="text-center">All About the Homebrew Computer Club</h1>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/homebrew.jpg"  height="80%" width="80%" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">What is it?</h1>
+                            <p class="lead text-center">
+                                The premise for the club was based on an early computer hobbyist group in Silicon Valley called the Homebrew Computer Club.
+                                The club was essentially a group of electronic enthusiasts who collaborated on projects together.  The were driven by their passion for
+                                technology, and the club's ultimate goal was to learn and have fun.  I was greatly inspired by the enthusiasm held by the original club,
+                                so I decided to make my own version on campus, as club for students who love to work on projects together and have fun while doing it!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">What does the club do?</h1>
+                            <p class="lead text-center">
+                                Each semester, the club will take on a new software project, typically in an unfamiliar domain.  At the end of the
+                                semester we host an educational talk about the trials and tribulations of our project and share what we learned
+                                with our fellow students.
+                            </p>
+                            <p class="lead text-center">
+                                This semester we are working on building an arcade machine, running our own, homemade arcade games. We plan to
+                                donate the machine to the school upon its completion.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/homebrew4.jpg"  height="80%" width="80%" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/homebrew3.jpg"  height="80%" width="80%" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">What do I do for the club?</h1>
+                            <p class="lead text-center">
+                                Initally, when the club was first getting started, I held a more "hands-on" role in the club; I
+                                spent a majority of my time coding and collaborating with fellow club members.
+                            </p>
+                            <p class="lead text-center">
+                                Since the club has grown in size significantly, I currently spend most of my time delegating work
+                                among the club members. I assess club member's skills, assign them to appropriate teams based on
+                                their competency and interests, set deadlines and manager the overall project schedule, and
+                                offer feedback and support to less experienced coders in the
+                                club.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+        </section>
+    </div>
+    <!-- Turner-->
+    <div id="turner-wrapper">
+        <a href="#turner-toggle" class="btn btn-secondary" id="turner-close"> X </a>
+        <section class="bg-light">
+            <br/>
+            <div class="container-fluid bg-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-block">
+                            <h1 class="text-center">My Experience Working at </h1>
+                            <img class="center-block" src="vendor/images/turnerlogo.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/turneroffice.jpg" height="70%" width="70%" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">Where I Worked</h1>
+                            <p class="lead text-center">Turner Studios is located in the urban city of Atlanta, GA.  The company is
+                                widely known as a powerhouse in the television media industry. Some notable networks they own are:
+                                CNN, TBS, Cartoon Network, Adult Swim, and TNT. Working so close to the film industry was an
+                                exciting experience. Between seeing celebrities walking through campus and all the tv premier events,
+                                there was always something fun going on at Turner Studios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="center-block">
+                            <h1 class="text-center">What I Worked on</h1>
+                            <p class="lead text-center">I spent my time at Turner reverse engineering an old WinForms application.
+                                My task was to take document of all services that were being called by the current front-end,
+                                and to create RESTful API endpoints to serve the same data to a new React front-end, while
+                                maintaining the integrity of the existing WebForms services.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="center-block">
+                            <img class="center-block" src="vendor/images/turnerreact.jpg" height="70%" width="70%" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+        </section>
+    </div>
+
+    <!-- Turner-->
+    <div id="turner-wrapper">
+        <a href="#turner-toggle" class="btn btn-secondary" id="turner-close"> X </a>
+    </div>
+    <!-- Homebrew -->
+    <div id="homebrew-wrapper">
+        <a href="#homebrew-toggle" class="btn btn-secondary" id="homebrew-close"> X </a>
+    </div>
+
+    <!-- /#sidebar-wrapper -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <a href="#blizz-toggle" id="blizz-toggle">
+                        <img class="d-block img-fluid" src="https://puu.sh/zfXfU.png" width="2000" alt="First slide">
+                        <a/>
+                </div>
+                <div class="carousel-item">
+                    <a href="#hombrew-toggle" id="homebrew-toggle">
+                        <img class="d-block img-fluid" src="https://puu.sh/zfXfT.png" width="2000" alt="Second slide">
+                        <a/>
+                </div>
+                <div class="carousel-item">
+                    <a href="#turner-toggle" id="turner-toggle">
+                        <img class="d-block img-fluid" src="https://puu.sh/zfXfD.png" width="2000" alt="Third slide">
+                        <a/>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -356,22 +435,29 @@
 
                             <div class="subtitle">About Me</div>
                             <p>I am a current Software Engineering student at Kennesaw State University(KSU). I enjoy working
-                                with and creating artificial intelligence programs, low-level C++ projects, and video games.
+                                with and creating artificial intelligence programs, low-level C++ projects, and playing video games.
                             </p>
-                            <p>I am the founder and current president of the KSU Homebrew Computing Club. I am interning for
-                                Turner Studios as a Software Developer. My estimated graduation date is Fall 2018.</p>
+                            <p>I am the founder and current president of the KSU Homebrew Computing Club.  I am interning for
+                                Turner Studios as a Software Developer and currently looking for full-time positions for late 2018.
+                                My estimated graduation date is Fall 2018.</p>
                         </div>
                     </div>
                     <div class="card">
                         <h1 class="text-center">Key Technical Skills</h1>
                         <div class="card-content">
                             <div class="subtitle">C++ Development</div>
-                            <p>I am a current Software Engineering student at Kennesaw State University(KSU). I enjoy working
-                                with and creating artificial intelligence programs, low-level C++ projects, and video games.
+                            <p>I began learning C++ when I was about 13 years old; it was my first programming language ever!
+                                Since then, I've had a strong inclination towards the language.  As a result, a majority of
+                                my professional, personal, and university projects have dealt with C++.  I know the language better
+                                than most other languages, and I'm always looking expand my knowledge.
                             </p>
                             <div class="subtitle">Game Engine Tools</div>
-                            <p>I am the founder and current president of the KSU Homebrew Computing Club. I am interning for
-                                Turner Studios as a Software Developer. My estimated graduation date is Fall 2018.</p>
+                            <p>I have professional experience working at Blizzard Entertainment building tools and working on an
+                                unannounced feature for Starcraft II. I also have a large amount of professional
+                                experience working with C# applications and have recently began working on a WPF personal project,
+                                which you can read more about below.
+
+                            </p>
                             <div class="subtitle">Experienced With</div>
                             <canvas id="myChart" width="200" height="100"></canvas>
 
